@@ -3,15 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fafafa;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fafafa;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: "BRINeueFaceRegular";
+  src: url("/fonts/BRINeueFaceRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BRINeueFaceBold";
+  src: url("/fonts/BRINeueFaceBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
