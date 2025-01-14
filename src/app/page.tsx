@@ -3,6 +3,7 @@ import HomeBanner from "@/components/section/home/home-banner";
 import HomeDescription from "@/components/section/home/home-description";
 import HomeFeature from "@/components/section/home/home-feature";
 import HomeHighlight from "@/components/section/home/home-highlight";
+import HomePromo from "@/components/section/home/home-promo";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeHighlight containerStyle="max-w-screen-xl px-4 mx-auto " />
       <HomeFeature containerStyle="max-w-screen-xl my-24 px-4 mx-auto" />
       <HomeAnotherFeature containerStyle="max-w-screen-xl my-24 px-4 mx-auto" />
+      <HomePromo containerStyle="max-w-screen-xl mt-36 px-4 mx-auto" />
     </>
   );
 };

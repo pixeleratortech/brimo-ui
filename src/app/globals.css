@@ -14,6 +14,16 @@
   }
 }
 
+@layer utilities {
+  .glassmorphism {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+  }
+}
+
 @font-face {
   font-family: "BRINeueFaceRegular";
   src: url("/fonts/BRINeueFaceRegular.ttf") format("truetype");
