@@ -3,7 +3,7 @@ import Paragraph from "@/components/base/paragraph";
 import { featureFilter } from "@/helper/const";
 import React, { useState } from "react";
 import Image from "next/image";
-import { anotherFeature } from "@/helper/dummy";
+import { DummyAnotherFeature } from "@/helper/dummy";
 import Button from "@/components/base/button";
 import { IoIosArrowForward } from "react-icons/io";
 import FadeInLeft from "@/components/animation/fadeInLeft";
@@ -75,7 +75,7 @@ const HomeAnotherFeature = ({ containerStyle }: Props) => {
             className={`active-feature-category-${activeButton}`}
           >
             <Paragraph fontUbuntu className="text-accent-orange">
-              {anotherFeature[activeButton].category}
+              {DummyAnotherFeature[activeButton].category}
             </Paragraph>
           </FadeInLeft>
           <FadeInLeft
@@ -83,7 +83,7 @@ const HomeAnotherFeature = ({ containerStyle }: Props) => {
             className={`active-feature-title-${activeButton}`}
           >
             <Paragraph className="font-brineue-bold mt-8 text-primary-blue text-[3rem] leading-[3rem]">
-              {anotherFeature[activeButton].title}
+              {DummyAnotherFeature[activeButton].title}
             </Paragraph>
           </FadeInLeft>
           <FadeInLeft
@@ -91,7 +91,7 @@ const HomeAnotherFeature = ({ containerStyle }: Props) => {
             className={`active-feature-description-${activeButton}`}
           >
             <Paragraph fontUbuntu className="text-primary-blue mt-8">
-              {anotherFeature[activeButton].description}
+              {DummyAnotherFeature[activeButton].description}
             </Paragraph>
           </FadeInLeft>
 
@@ -112,7 +112,7 @@ const HomeAnotherFeature = ({ containerStyle }: Props) => {
           style="w-[60%] flex justify-center"
         >
           <Image
-            src={anotherFeature[activeButton].image}
+            src={DummyAnotherFeature[activeButton].image}
             alt=""
             width={400}
             height={400}

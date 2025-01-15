@@ -4,7 +4,7 @@ export const DummyFeature = [
     { id: 3, title: "Valas", description: "Manfaatkan peluang pasar global dengan investasi valas yang mudah dan fleksibel untuk hasil yang lebih maksimal", image: "/images/feature_3.svg" },
 ]
 
-export const anotherFeature = [
+export const DummyAnotherFeature = [
     { id: 1, category: "Asuransi", title: "Perlindungan Cerdas di Ujung Jari", description: "BRImo memudahkan kamu untuk membeli produk asuransi yang sesuai dengan kebutuhan, mulai dari kesehatan hingga jiwa, semuanya dapat diakses langsung dari aplikasi, dengan proses yang cepat dan aman.", image: "/images/another_feature_dummy.svg" },
     { id: 2, category: "Debit Virtual", title: "Perlindungan Cerdas di Ujung Jari", description: "BRImo memudahkan kamu untuk membeli produk asuransi yang sesuai dengan kebutuhan, mulai dari kesehatan hingga jiwa, semuanya dapat diakses langsung dari aplikasi, dengan proses yang cepat dan aman.", image: "/images/another_feature_dummy.svg" },
     { id: 3, category: "Donasi", title: "Perlindungan Cerdas di Ujung Jari", description: "BRImo memudahkan kamu untuk membeli produk asuransi yang sesuai dengan kebutuhan, mulai dari kesehatan hingga jiwa, semuanya dapat diakses langsung dari aplikasi, dengan proses yang cepat dan aman.", image: "/images/another_feature_dummy.svg" },
@@ -17,4 +17,30 @@ export const anotherFeature = [
 export const DummyPromo = [
     { id: 1, image: "/images/dummy_promo.svg", title: "Mudahnya Beli Tiket Mudik Kereta Api", category: "Travel & Transportation", date: "6 Januari 2025" },
     { id: 2, image: "/images/dummy_promo.svg", title: "Beli Pulsa dan Paket Data di BRImo Dapat Bonus!", category: "Gadget & Electronics", date: "7 Januari 2025" },
+]
+
+export const DummySavingData = [
+    {
+        id: 1, image: "/images/dummy_saving_image.svg", title: "Mulai Perjalanan Finansialmu dengan", description: "  Unduh BRImo di Play Store, App Store, atau Huawei AppGallery, lalu buka aplikasi, pilih `Belum Punya` Rekening BRI, dan pilih produk tabungan yang diinginkan untuk memulai pendaftaran."
+    },
+    {
+        id: 2, image: "/images/dummy_saving_image.svg", title: "Mulai Perjalanan Finansialmu dengan", description: "  Unduh BRImo di Play Store, App Store, atau Huawei AppGallery, lalu buka aplikasi, pilih `Belum Punya` Rekening BRI, dan pilih produk tabungan yang diinginkan untuk memulai pendaftaran."
+    },
+    {
+        id: 3, image: "/images/dummy_saving_image.svg", title: "Mulai Perjalanan Finansialmu dengan", description: "  Unduh BRImo di Play Store, App Store, atau Huawei AppGallery, lalu buka aplikasi, pilih `Belum Punya` Rekening BRI, dan pilih produk tabungan yang diinginkan untuk memulai pendaftaran."
+    },
+    {
+        id: 4, image: "/images/dummy_saving_image.svg", title: "Mulai Perjalanan Finansialmu dengan", description: "  Unduh BRImo di Play Store, App Store, atau Huawei AppGallery, lalu buka aplikasi, pilih `Belum Punya` Rekening BRI, dan pilih produk tabungan yang diinginkan untuk memulai pendaftaran."
+    },
+    {
+        id: 5, image: "/images/dummy_saving_image.svg", title: "Mulai Perjalanan Finansialmu dengan", description: "  Unduh BRImo di Play Store, App Store, atau Huawei AppGallery, lalu buka aplikasi, pilih `Belum Punya` Rekening BRI, dan pilih produk tabungan yang diinginkan untuk memulai pendaftaran."
+    },
+]
+
+export const DummySavingFAQ = [
+    { id: 1, title: "Cara Daftar BRImo", href: "/" },
+    { id: 2, title: "Top up dengan BRImo", href: "/" },
+    { id: 3, title: "Gagal Transaksi menggunakan QRIS", href: "/" },
+    { id: 4, title: "Lupa PIN saat transaksi", href: "/" },
+    { id: 5, title: "Cara lihat detail transaksi", href: "/" },
 ]

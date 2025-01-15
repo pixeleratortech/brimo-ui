@@ -31,6 +31,9 @@ module.exports = {
           blue: "#DDEFFC",
         },
       },
+      boxShadow: {
+        faq: "0px 10px 30px 0px rgba(0, 0, 0, 0.05)",
+      },
       backgroundImage: {
         "hero-banner": "url('/images/qlola_hero_banner.svg')",
         "giro-banner": "url('/images/background_giro.svg')",

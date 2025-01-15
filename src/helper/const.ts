@@ -4,8 +4,8 @@ export const navLink = [
         dropdownItems: [
             {
                 title: "Buka Tabungan", link: [
-                    { name: "Sudah Punya Rekening", href: "/" },
-                    { name: "Belum Punya Rekening", href: "/" },
+                    { name: "Sudah Punya Rekening", href: "/buka-tabungan?sudah-punya-tabungan" },
+                    { name: "Belum Punya Rekening", href: "/buka-tabungan?belum-punya-tabungan" },
                 ]
             },
             {
@@ -83,3 +83,7 @@ export const helpLinks = [
     { id: 2, label: "FAQ", href: "/" },
     { id: 3, label: "Hubungi Kami", href: "/" },
 ];
+
+export const openSavingFilter = [
+    "Sudah Punya Rekening BRI", "Belum Punya Rekening BRI"
+]

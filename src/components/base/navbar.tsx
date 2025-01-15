@@ -18,6 +18,10 @@ const Navbar = () => {
     setOpenDropdownIndex(openDropdownIndex === index ? null : index);
   };
 
+  const handleLinkClick = () => {
+    setOpenDropdownIndex(null);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -103,7 +107,7 @@ const Navbar = () => {
                           : "scale-95 opacity-0 pointer-events-none"
                       }`}
                     >
-                      {/* Jika ada children */}
+                      {/* If there are children */}
                       {item.hasChildren ? (
                         <div className="grid grid-cols-2 gap-6 px-10 py-10 w-[800px]">
                           {item.dropdownItems.map((dropdown, dropdownIndex) => (
@@ -117,6 +121,7 @@ const Navbar = () => {
                                     <Link
                                       href={linkItem.href}
                                       className="block text-primary-blue text-sm hover:bg-gray-100 py-0.5 rounded"
+                                      onClick={handleLinkClick} // Close dropdown on link click
                                     >
                                       <Paragraph fontUbuntu className="">
                                         {linkItem.name}
@@ -137,6 +142,7 @@ const Navbar = () => {
                                   //@ts-expect-error: dropdownItem may not have href property
                                   href={dropdownItem.href}
                                   className="block text-primary-blue text-sm px-2 py-2 rounded-[20px]"
+                                  onClick={handleLinkClick} // Close dropdown on link click
                                 >
                                   <Paragraph fontUbuntu>
                                     {"name" in dropdownItem
