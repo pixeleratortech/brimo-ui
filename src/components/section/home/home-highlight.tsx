@@ -1,14 +1,17 @@
+"use client";
 import Paragraph from "@/components/base/paragraph";
 import React from "react";
 import Button from "@/components/base/button";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
+import { useRouter } from "next/navigation";
 
 interface Props {
   containerStyle: string;
 }
 
 const HomeHighlight = ({ containerStyle }: Props) => {
+  const router = useRouter();
   return (
     <div className={containerStyle}>
       <div className="bg-primary-blue justify-between py-16 items-center flex rounded-3xl px-14">
@@ -17,6 +20,7 @@ const HomeHighlight = ({ containerStyle }: Props) => {
             Transaksi apa pun jadi mudah dan serba bisa bersama BRImo!
           </Paragraph>
           <Button
+            onClick={() => router.push("/everyday-banking")}
             buttonText={
               <div className="flex items-center ">
                 <Paragraph>Selengkapnya</Paragraph>

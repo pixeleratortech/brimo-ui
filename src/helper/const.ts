@@ -38,7 +38,7 @@ export const navLink = [
     },
     {
         name: "Promo",
-        href: "#",
+        href: "/promo",
 
     },
     {
@@ -49,7 +49,7 @@ export const navLink = [
             { name: "Hubungi Kami", href: "/" },
         ],
     },
-    { name: "BRImo FSTVL", href: "#" },
+    { name: "BRImo FSTVL", href: "https://brimofstvl.bri.co.id/" },
 ];
 
 export const featureFilter = [

@@ -6,7 +6,7 @@ import HomeFeature from "@/components/section/home/home-feature";
 import HomeHighlight from "@/components/section/home/home-highlight";
 import HomePromo from "@/components/section/home/home-promo";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <ScreenReaderTitle title="BRImo Semua Serba Bisa" />
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

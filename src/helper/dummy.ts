@@ -44,3 +44,17 @@ export const DummySavingFAQ = [
     { id: 4, title: "Lupa PIN saat transaksi", href: "/" },
     { id: 5, title: "Cara lihat detail transaksi", href: "/" },
 ]
+
+export const PromoDummy = [
+    { id: 1, title: "Makan Siang Spesial Lebih Murah", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 2, title: "Manisnya Hemat di Toko Kue!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 3, title: "Segar & Hemat di Supermarket", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 4, title: "Belanja Harian jadi Hemat!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 5, title: "Diskon Belanja Online Groceries", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 6, title: "Belanja Sembako Lebih Untung!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 7, title: "Langganan Musik Jadi Lebih Murah!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 8, title: "Belanja Harian jadi Hemat!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 9, title: "Diskon Belanja Online Groceries", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 10, title: "Belanja Sembako Lebih Untung!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+    { id: 11, title: "Langganan Musik Jadi Lebih Murah!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
+]
