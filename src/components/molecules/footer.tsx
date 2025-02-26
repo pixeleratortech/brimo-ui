@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import LocationIcon from "../../../public/icons/location";
-import Paragraph from "../base/paragraph";
+import Paragraph from "../atoms/paragraph";
 import PhoneIcon from "../../../public/icons/phone";
 import MailIcon from "../../../public/icons/mail";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -10,7 +10,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import { GoDotFill } from "react-icons/go";
-import Button from "../base/button";
+import Button from "../atoms/button";
 import { helpLinks, productLinks, promoLinks } from "@/helper/const";
 
 const Footer = () => {
@@ -42,8 +42,6 @@ const Footer = () => {
       href: "https://bri.co.id/term-of-use",
     },
   ];
-
- 
 
   return (
     <div className="bottom-0 mt-8">

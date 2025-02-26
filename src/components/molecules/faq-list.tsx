@@ -1,6 +1,6 @@
 import React from "react";
-import Paragraph from "./paragraph";
 import { MdArrowForwardIos } from "react-icons/md";
+import Paragraph from "../atoms/paragraph";
 
 interface Props {
   data: {

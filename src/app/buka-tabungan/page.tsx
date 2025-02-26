@@ -1,7 +1,7 @@
-import ScreenReaderTitle from "@/components/base/sr-only-title";
-import SavingBanner from "@/components/section/buka-tabungan/saving-banner";
-import SavingFAQ from "@/components/section/buka-tabungan/saving-faq";
-import SavingTutorials from "@/components/section/buka-tabungan/saving-tutorials";
+import ScreenReaderTitle from "@/components/atoms/sr-only-title";
+import SavingBanner from "@/components/organisms/buka-tabungan/saving-banner";
+import SavingFAQ from "@/components/molecules/faq-section";
+import SavingTutorials from "@/components/organisms/buka-tabungan/saving-tutorials";
 import React from "react";
 
 const OpenSavingPage = () => {

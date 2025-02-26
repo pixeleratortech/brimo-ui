@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import Image from "next/image";
 import { DummyFeature } from "@/helper/dummy";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 import { IoIosArrowForward } from "react-icons/io";
 import FadeInFromBottom from "@/components/animation/fadeInBottom";
 

@@ -1,9 +1,9 @@
 import FadeInFromBottom from "@/components/animation/fadeInBottom";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import { DummyPromo } from "@/helper/dummy";
 import React from "react";
 import Image from "next/image";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 import { IoIosArrowForward } from "react-icons/io";
 
 interface Props {

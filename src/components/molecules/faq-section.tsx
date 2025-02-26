@@ -1,18 +1,18 @@
 import React from "react";
-import Paragraph from "@/components/base/paragraph";
-import FAQList from "@/components/base/faq-list";
+import Paragraph from "@/components/atoms/paragraph";
+import FAQList from "@/components/molecules/faq-list";
 import { DummySavingFAQ } from "@/helper/dummy";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 
 interface Props {
   containerStyle: string;
 }
 
-const SavingFAQ = ({ containerStyle }: Props) => {
+const FAQSection = ({ containerStyle }: Props) => {
   return (
     <div className={containerStyle}>
       <Paragraph className="text-[3.5rem] leading-[3.5rem] text-primary-blue font-brineue-bold text-center">
-        Yang Sering Ditanyain
+        Yang Sering Ditanyakan
       </Paragraph>
       <div className="mt-8">
         <FAQList data={DummySavingFAQ} />
@@ -29,4 +29,4 @@ const SavingFAQ = ({ containerStyle }: Props) => {
   );
 };
 
-export default SavingFAQ;
+export default FAQSection;

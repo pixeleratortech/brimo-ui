@@ -18,7 +18,7 @@ export const navLink = [
             },
             {
                 title: "Highlight Fitur", link: [
-                    { name: "Lifestyle", href: "/" },
+                    { name: "Lifestyle", href: "/fitur/lifestyle" },
                     { name: "Investasi", href: "/" },
                     { name: "Valas", href: "/" },
                 ]
@@ -31,7 +31,7 @@ export const navLink = [
                     { name: "Kartu Kredit", href: "/" },
                     { name: "Pinjaman", href: "/" },
                     { name: "Setor dan Tarik Tunai", href: "/" },
-                    { name: "Tagihan", href: "/" },
+                    { name: "Tagihan", href: "/fitur-lainnya/tagihan" },
                 ]
             },
         ],

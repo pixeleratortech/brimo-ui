@@ -1,10 +1,10 @@
 "use client";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import { featureFilter } from "@/helper/const";
 import React, { useState } from "react";
 import Image from "next/image";
 import { DummyAnotherFeature } from "@/helper/dummy";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 import { IoIosArrowForward } from "react-icons/io";
 import FadeInLeft from "@/components/animation/fadeInLeft";
 import FadeInRight from "@/components/animation/fadeInRight";

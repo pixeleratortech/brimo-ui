@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Paragraph from "@/components/base/paragraph";
-import Button from "@/components/base/button";
+import Paragraph from "@/components/atoms/paragraph";
+import Button from "@/components/atoms/button";
 import { IoIosArrowForward } from "react-icons/io";
 import FadeInLeft from "@/components/animation/fadeInLeft";
 import FadeInRight from "@/components/animation/fadeInRight";

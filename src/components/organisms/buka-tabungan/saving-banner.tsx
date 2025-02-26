@@ -1,5 +1,5 @@
 import React from "react";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import Image from "next/image";
 import FadeInLeft from "@/components/animation/fadeInLeft";
 

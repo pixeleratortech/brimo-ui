@@ -1,10 +1,10 @@
-import ScreenReaderTitle from "@/components/base/sr-only-title";
-import HomeAnotherFeature from "@/components/section/home/home-another-feature";
-import HomeBanner from "@/components/section/home/home-banner";
-import HomeDescription from "@/components/section/home/home-description";
-import HomeFeature from "@/components/section/home/home-feature";
-import HomeHighlight from "@/components/section/home/home-highlight";
-import HomePromo from "@/components/section/home/home-promo";
+import ScreenReaderTitle from "@/components/atoms/sr-only-title";
+import HomeAnotherFeature from "@/components/organisms/home/home-another-feature";
+import HomeBanner from "@/components/organisms/home/home-banner";
+import HomeDescription from "@/components/organisms/home/home-description";
+import HomeFeature from "@/components/organisms/home/home-feature";
+import HomeHighlight from "@/components/organisms/home/home-highlight";
+import HomePromo from "@/components/organisms/home/home-promo";
 
 const HomePage = () => {
   return (

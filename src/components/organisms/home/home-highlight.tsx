@@ -1,7 +1,7 @@
 "use client";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import React from "react";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from "next/navigation";

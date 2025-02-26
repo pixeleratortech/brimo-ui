@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { navLink } from "@/helper/const";
-import Button from "./button";
+import Button from "../atoms/button";
 import Link from "next/link";
 import FadeInFromBottom from "../animation/fadeInBottom";
-import Paragraph from "./paragraph";
+import Paragraph from "../atoms/paragraph";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

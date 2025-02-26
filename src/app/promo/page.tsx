@@ -1,11 +1,11 @@
 import React from "react";
 import FadeInOpacity from "@/components/animation/fadeIn";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import Image from "next/image";
 import { PromoDummy } from "@/helper/dummy";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 import FadeInFromBottom from "@/components/animation/fadeInBottom";
-import ScreenReaderTitle from "@/components/base/sr-only-title";
+import ScreenReaderTitle from "@/components/atoms/sr-only-title";
 
 const PromoPage = () => {
   return (

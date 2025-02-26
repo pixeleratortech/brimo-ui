@@ -1,9 +1,9 @@
 "use client";
-import Filter from "@/components/base/filter";
+import Filter from "@/components/atoms/filter";
 import { openSavingFilter } from "@/helper/const";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import { DummySavingData } from "@/helper/dummy";
 import FadeInLeft from "@/components/animation/fadeInLeft";
 import FadeInFromBottom from "@/components/animation/fadeInBottom";

@@ -1,7 +1,7 @@
-import Paragraph from "@/components/base/paragraph";
+import Paragraph from "@/components/atoms/paragraph";
 import React from "react";
 import Image from "next/image";
-import Button from "@/components/base/button";
+import Button from "@/components/atoms/button";
 import FadeInLeft from "@/components/animation/fadeInLeft";
 import FadeInRight from "@/components/animation/fadeInRight";
 

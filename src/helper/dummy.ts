@@ -58,3 +58,9 @@ export const PromoDummy = [
     { id: 10, title: "Belanja Sembako Lebih Untung!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
     { id: 11, title: "Langganan Musik Jadi Lebih Murah!", image: "/images/dummy_promo_list_image.svg", category: "Food and Beverage" },
 ]
+
+export const LifestyleDummy = [
+    { id: 1, title: "Perjalanan Makin Lancar Dengan", subtitle: "Pesan tiket liburan lebih mudah dan cepat melalui aplikasi BRImo!", image: "/images/dummy_lifestyle.png", item: [{ id: 1, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 2, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 3, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 4, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" },] },
+    { id: 2, title: "Perjalanan Makin Lancar Dengan", subtitle: "Pesan tiket liburan lebih mudah dan cepat melalui aplikasi BRImo!", image: "/images/dummy_lifestyle.png", item: [{ id: 1, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 2, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 3, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 4, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" },] },
+    { id: 3, title: "Perjalanan Makin Lancar Dengan", subtitle: "Pesan tiket liburan lebih mudah dan cepat melalui aplikasi BRImo!", image: "/images/dummy_lifestyle.png", item: [{ id: 1, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 2, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 3, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" }, { id: 4, title: "Bus Shuttle", icon: "/icons/dummy_lifestyle_icon.svg" },] },
+]
