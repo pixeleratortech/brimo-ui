@@ -1,4 +1,5 @@
 import ScreenReaderTitle from "@/components/atoms/sr-only-title";
+import FloatingMenu from "@/components/molecules/floating-button";
 import HomeAnotherFeature from "@/components/organisms/home/home-another-feature";
 import HomeBanner from "@/components/organisms/home/home-banner";
 import HomeDescription from "@/components/organisms/home/home-description";
@@ -9,8 +10,13 @@ import HomePromo from "@/components/organisms/home/home-promo";
 const HomePage = () => {
   return (
     <>
+      <FloatingMenu />
       <ScreenReaderTitle title="BRImo Semua Serba Bisa" />
-      <HomeBanner containerStyle={"bg-primary-blue rounded-b-[2.5rem]"} />
+      <HomeBanner
+        containerStyle={
+          "bg-home-banner bg-no-repeat bg-cover bg-center w-full rounded-b-[2.5rem]"
+        }
+      />
       <HomeDescription containerStyle="max-w-screen-xl py-36 flex justify-between items-center mx-auto px-4" />
       <HomeHighlight containerStyle="max-w-screen-xl px-4 mx-auto " />
       <HomeFeature containerStyle="max-w-screen-xl my-24 px-4 mx-auto" />

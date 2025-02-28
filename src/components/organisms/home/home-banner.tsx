@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/atoms/button";
 import FadeInLeft from "@/components/animation/fadeInLeft";
-import FadeInRight from "@/components/animation/fadeInRight";
 
 interface Props {
   containerStyle: string;
@@ -12,7 +11,7 @@ interface Props {
 const HomeBanner = ({ containerStyle }: Props) => {
   return (
     <div className={containerStyle}>
-      <div className="max-w-screen-xl h-[95vh] mx-auto px-4 justify-between items-center flex">
+      <div className="max-w-screen-xl h-[100vh] mx-auto px-4 justify-between items-center flex">
         <div>
           <div>
             <FadeInLeft duration={1000} className={`home-banner-title-image`}>
@@ -37,12 +36,6 @@ const HomeBanner = ({ containerStyle }: Props) => {
           </div>
           <div className="flex items-center gap-12 mt-20">
             <Button
-              buttonText={"Download"}
-              className={
-                "rounded-3xl hidden md:block text-sm px-12 py-2 font-brineue-bold text-primary-blue text-center font-jakarta bg-primary-white"
-              }
-            />
-            <Button
               buttonText={
                 <div className="flex gap-3 items-center">
                   <Image
@@ -52,27 +45,18 @@ const HomeBanner = ({ containerStyle }: Props) => {
                     alt=""
                   />
                   <Paragraph className="font-brineue-bold">
-                    Watch Video
+                    Tonton Videonya
                   </Paragraph>
                 </div>
               }
               className={
-                "rounded-3xl hidden md:block text-sm px-4 py-2 text-primary-white text-center font-jakarta bg-primary-blue"
+                "rounded-3xl hidden md:block text-md py-2 text-primary-white font-jakarta"
               }
             />
           </div>
         </div>
-        <div>
-          <FadeInRight className={`home-banner-image`} duration={1400}>
-            <Image
-              src="/images/home_banner_image.svg"
-              width={700}
-              height={700}
-              alt=""
-            />
-          </FadeInRight>
-
-          <div className="flex justify-center gap-10 -mt-20 mx-8 glassmorphism py-4">
+        <div className="h-[50vh] flex flex-col">
+          <div className="mt-auto flex justify-center gap-10 mx-8 glassmorphism p-4">
             <Button
               buttonText={
                 <Image

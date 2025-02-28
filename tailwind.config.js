@@ -37,6 +37,7 @@ module.exports = {
       backgroundImage: {
         "hero-banner": "url('/images/qlola_hero_banner.svg')",
         "giro-banner": "url('/images/background_giro.svg')",
+        "home-banner": "url('/images/dummy_home_banner.png')",
       },
     },
   },
