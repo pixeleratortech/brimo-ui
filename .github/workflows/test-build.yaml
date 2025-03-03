@@ -1,0 +1,36 @@
+# github action to test prod build on push pr
+name: Test Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configure Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.x"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Lint
+        run: npm run lint
+
+      - name: Build
+        # env:
+        #   NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL_STG }}
+        #   STRAPI_API_TOKEN: ${{ secrets.STRAPI_API_TOKEN_STG }}
+        #   STRAPI_BASE_URL: ${{ vars.STRAPI_BASE_URL_STG }}
+        run: npm run build
