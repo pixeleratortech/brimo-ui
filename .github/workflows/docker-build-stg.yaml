@@ -1,0 +1,63 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ${{ vars.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Log in to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v1
+        with:
+          mask-password: "true"
+
+      - name: Build, tag and push Docker image to Amazon ECR
+        id: build-image
+        run: |
+          docker build -t ${{ vars.ECR_REPOSITORY }} \
+            --build-arg NEXT_PUBLIC_SITE_URL=${{ vars.NEXT_PUBLIC_SITE_URL_STG }} \
+            --build-arg STRAPI_API_TOKEN=${{ secrets.STRAPI_API_TOKEN_STG }} \
+            --build-arg STRAPI_BASE_URL=${{ vars.STRAPI_BASE_URL_STG }} \
+            .
+          docker tag ${{ vars.ECR_REPOSITORY }}:latest ${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ vars.AWS_REGION }}.amazonaws.com/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
+          docker push ${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ vars.AWS_REGION }}.amazonaws.com/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
+          echo "image=${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ vars.AWS_REGION }}.amazonaws.com/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}" >> $GITHUB_OUTPUT
+
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: brimo-ui.json
+          container-name: nodejs
+          image: ${{ steps.build-image.outputs.image }}
+          # environment-variables: |
+          #   NEXT_PUBLIC_SITE_URL=${{ vars.NEXT_PUBLIC_SITE_URL_STG }}
+          #   STRAPI_API_TOKEN=${{ secrets.STRAPI_API_TOKEN_STG }}
+          #   STRAPI_BASE_URL=${{ vars.STRAPI_BASE_URL_STG }}
+          #   REVALIDATE_API_KEY=${{ secrets.REVALIDATE_API_KEY_STG }}
+
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: brimo-ui
+          cluster: brimo
+          wait-for-service-stability: true
