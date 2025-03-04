@@ -14,19 +14,18 @@ interface Props {
 }
 
 const SavingTutorials = ({ containerStyle }: Props) => {
+  const [selectedFilter, setSelectedFilter] = useState<number>(1);
   const searchParams = useSearchParams();
-  const getInitialFilter = () => {
+
+  useEffect(() => {
     const query = Object.fromEntries(searchParams.entries());
     if ("sudah-punya-tabungan" in query) {
-      return 0;
+      setSelectedFilter(0);
     } else if ("belum-punya-tabungan" in query) {
-      return 1;
+      setSelectedFilter(1);
     }
-    return 1;
-  };
+  }, [searchParams]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [selectedFilter, setSelectedFilter] =
-    useState<number>(getInitialFilter);
 
   const handleFilterChange = (selectedFilter: number) => {
     setSelectedFilter(selectedFilter);
