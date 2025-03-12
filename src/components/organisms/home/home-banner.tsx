@@ -11,6 +11,7 @@ interface Props {
 const HomeBanner = ({ containerStyle }: Props) => {
   return (
     <div className={containerStyle}>
+      <div className="absolute inset-0 bg-black bg-opacity-30 pointer-events-none"></div>
       <div className="max-w-screen-xl h-[100vh] mx-auto px-4 justify-between items-center flex">
         <div>
           <div>
@@ -34,7 +35,7 @@ const HomeBanner = ({ containerStyle }: Props) => {
               </Paragraph>
             </FadeInLeft>
           </div>
-          <div className="flex items-center gap-12 mt-20">
+          <div className="flex z-20 relative items-center gap-12 mt-20">
             <Button
               buttonText={
                 <div className="flex gap-3 items-center">
@@ -44,7 +45,7 @@ const HomeBanner = ({ containerStyle }: Props) => {
                     height={20}
                     alt=""
                   />
-                  <Paragraph className="font-brineue-bold">
+                  <Paragraph className="font-brineue-bold text-primary-white">
                     Tonton Videonya
                   </Paragraph>
                 </div>
