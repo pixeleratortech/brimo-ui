@@ -48,10 +48,10 @@ jobs:
           task-definition: brimo-ui.json
           container-name: nodejs
           image: ${{ steps.build-image.outputs.image }}
-          # environment-variables: |
+          environment-variables: |
+            STRAPI_BASE_URL=${{ vars.STRAPI_BASE_URL_STG }}
           #   NEXT_PUBLIC_SITE_URL=${{ vars.NEXT_PUBLIC_SITE_URL_STG }}
           #   STRAPI_API_TOKEN=${{ secrets.STRAPI_API_TOKEN_STG }}
-          #   STRAPI_BASE_URL=${{ vars.STRAPI_BASE_URL_STG }}
           #   REVALIDATE_API_KEY=${{ secrets.REVALIDATE_API_KEY_STG }}
 
       - name: Deploy Amazon ECS task definition
